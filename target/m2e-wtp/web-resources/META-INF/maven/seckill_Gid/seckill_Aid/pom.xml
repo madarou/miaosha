@@ -16,9 +16,10 @@
             <email>wchb20155@gmail.com</email>
         </developer>
     </developers>
-
-    <properties>
+	
+	<properties>
         <spring.version>4.2.0.RELEASE</spring.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -224,7 +225,7 @@
     <!-- Build Settings -->
     <!--http://maven.apache.org/pom.html#Build_Settings-->
     <build>
-        <finalName>seckill_F</finalName>
+        <finalName>/</finalName>
         <resources>
             <resource>
                 <!--directory: 资源所在的位置-->
@@ -262,6 +263,13 @@
 		            <target>1.7</target>
 		        </configuration>
 		    </plugin>
+		    <plugin>  
+		        <groupId>org.apache.maven.plugins</groupId>  
+		        <artifactId>maven-resources-plugin</artifactId>  
+		        <configuration>  
+		            <encoding>UTF-8</encoding>  
+		        </configuration>  
+		    </plugin>  
         </plugins>
     </build>
 
